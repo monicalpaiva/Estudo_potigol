@@ -1,0 +1,10 @@
+# Exercício 2 
+# Escreva um programa que irá receber dois números reais, calcula a média aritmética e imprime o resultado ao final.
+
+imprima "Informe um número inteiro: "
+var numero01 := leia_numero
+imprima "Informe um número inteiro: "
+var numero02 := leia_numero
+
+resultado = (numero01 + numero02)/2
+imprima resultado

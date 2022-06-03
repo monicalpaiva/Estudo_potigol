@@ -1,0 +1,8 @@
+# Exercício 3 
+# Faça um programa que irá receber um nome e que ao final apresenta a 
+# seguinte frase “Olá (?), seja bem-vindo(a) ao mundo da programação”. 
+# Substitua a interrogação pelo nome recebido pelo programa.
+
+imprima "Informe seu nome: "
+var nome := leia_texto
+imprima "Olá {nome}, seja bem-vindo(a) ao mundo da programação. "

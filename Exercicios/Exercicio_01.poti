@@ -1,0 +1,10 @@
+# Exercício 1 
+# Construa um algoritmo que receberá dois números inteiros e que, ao final, apresenta a soma
+
+imprima "Informe um número inteiro: "
+var numero01 := leia_inteiro
+imprima "Informe um número inteiro: "
+var numero02 := leia_inteiro
+
+resultado = numero01 + numero02
+imprima resultado
