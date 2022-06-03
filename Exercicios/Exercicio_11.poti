@@ -1,0 +1,15 @@
+# Exercício 11
+# Recebe nota da atividade, nota da participação e nota da prova
+# (a nota da prova tem peso 2) e imprime a nota final.
+
+
+imprima "Digite o valor da nota da atividade: "
+var atividade := leia_inteiro
+imprima "Digite o valor da nota de participação: "
+var participacao := leia_inteiro
+imprima "Digite o valor da nota da prova: "
+var prova := leia_inteiro
+
+nota = (atividade + participacao + prova*2)/4
+
+escreva "Media final é {nota}"

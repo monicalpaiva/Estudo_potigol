@@ -1,0 +1,57 @@
+# Exercício 12
+# Calculando media do aluno do curso do IMD/UFRN de acordo com a formula
+# (iti*60 + matemática*40 + ingles*40 + sistema*60 + arquitetura*20 + lógica*60)/280
+# Obs: Nenhuma disciplina do módulo pode ter média < 3, caso contrário
+# terá de fazer a reposição para tentar recuperar a nota
+# Construa o algoritmo, em Potigol, que receberá as médias de cada disciplina, realiza o cálculo
+# da média geral e informa se o aluno está aprovado por média.
+# • Caso o aluno obtenha média geral >= 5.0, mas alguma disciplina esteja com nota < 3,
+# o seu algoritmo deverá informar que o aluno está em recuperação e em quais
+# disciplinas
+
+## AINDA EM CONSTRUÇÃO
+
+imprima "Digite o valor da media em iti: "
+var iti := leia_inteiro
+imprima "Digite o valor da media em matematica: "
+var matematica := leia_inteiro
+imprima "Digite o valor da media em ingles: "
+var ingles := leia_inteiro
+imprima "Digite o valor da media em sistemas: "
+var sistemas := leia_inteiro
+imprima "Digite o valor da media em arquitetura: "
+var arquitetura := leia_inteiro
+imprima "Digite o valor da media em logica: "
+var logica := leia_inteiro
+
+media = (iti*60 + matematica*40 + ingles*40 + sistemas*60 + arquitetura*20 + logica*60)/280
+
+se media >= 5 então
+	escreva "Aluno aprovado por média."
+senão
+	se iti >= 3 então
+        se matematica >= 3 então
+            se ingles >= 3 então
+                se sistemas >= 3 então
+                    se arquitetura >= 3 então
+                        se logica >= 3 então
+                    		escreva "Aluno em recuperação"
+	                    senão
+		                    escreva "Aluno reprovado"
+	                    fim
+                    senão
+		                escreva "Aluno reprovado"
+                    fim
+                senão
+		            escreva "Aluno reprovado"
+                fim
+            senão
+		        escreva "Aluno reprovado"
+            fim
+        senão
+		    escreva "Aluno reprovado"
+        fim
+    senão
+		escreva "Aluno reprovado"
+    fim
+fim
