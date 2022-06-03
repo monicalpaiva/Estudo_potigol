@@ -1,0 +1,13 @@
+# Exercício 7
+# Crie um programa que irá receber um número inteiro qualquer e que, 
+# ao final, apresenta o último dígito do número recebido. Por exemplo, 
+# se o número informado ao programa for:
+# • 123, o programa deve apresentar 3;
+# • 99986, o programa deve apresentar 6;
+# • 41, o programa deve apresentar 1.
+
+imprima "Informe um número inteiro: "
+var numero := leia_inteiro
+
+resultado = numero mod 10
+imprima resultado

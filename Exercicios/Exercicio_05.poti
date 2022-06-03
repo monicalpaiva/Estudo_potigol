@@ -1,0 +1,13 @@
+# Exercício 5
+# Implemente um programa que realizará o seguinte cálculo:
+# 𝑚é𝑑𝑖𝑎 = (𝑛𝑜𝑡𝑎1 ∗ 2 + 𝑛𝑜𝑡𝑎2 ∗ 3)/5
+# Ao final, o programa deve apresentar a média calculada
+
+imprima "Informe um número inteiro: "
+var numero01 := leia_inteiro
+imprima "Informe um número inteiro: "
+var numero02 := leia_inteiro
+
+resultado = ((numero01*2) + (numero02*3))/5
+
+imprima {resultado}

@@ -1,0 +1,16 @@
+# Exercício 9
+# Construa um algoritmo que recebe um número inteiro e verifica se esse
+# é menor do que 10. Se o número for menor que 10, some mais 5 a ele e 
+# então apresente o resultado. Caso contrário, subtraia 10 e então 
+# apresente o resultado.
+
+imprima "Informe um número inteiro: "
+var numero := leia_inteiro
+
+se numero < 10 então
+	numero = numero + 5
+    imprima numero
+senão
+	numero = numero - 10
+    imprima numero
+fim

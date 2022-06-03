@@ -1,0 +1,24 @@
+# Exercício 10
+# Construa um algoritmo que recebe dois números e que realiza as quatro
+# operações básicas com eles (soma, subtração, divisão e multiplicação)
+# e, ao final, apresenta os resultados. Por exemplo, se o algoritmo 
+# recebe 10 e 5, apresentará:
+# • Soma: 15.0
+# • Subtração: 5.0
+# • Divisão: 2.0
+# • Multiplicação: 50.0
+
+imprima "Informe um número inteiro: "
+var numero01 := leia_inteiro
+imprima "Informe um número inteiro: "
+var numero02 := leia_inteiro
+
+soma = numero01 + numero02
+subtracao = numero01 - numero02
+divisao = numero01/numero02
+multiplicacao = numero01*numero02
+
+escreva "Soma: {soma}"
+escreva "Subtração: {subtracao}"
+escreva "Divisão: {divisao}"
+escreva "Multiplicacao: {multiplicacao}"

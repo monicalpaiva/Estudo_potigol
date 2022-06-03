@@ -1,0 +1,13 @@
+# Exercício 4 
+# Escreva um programa que irá receber dois números, calcula a média aritmética
+# e que ao final escreve a frase “A sua média foi de ? em lógica de programação”. 
+# Substitua a interrogação pela média calculada.
+
+imprima "Informe um número inteiro: "
+var numero01 := leia_inteiro
+imprima "Informe um número inteiro: "
+var numero02 := leia_inteiro
+
+resultado = (numero01 + numero02)/2
+
+imprima "A sua média foi de {resultado} em lógica de programação."

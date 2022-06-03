@@ -1,0 +1,15 @@
+# Exercício 6
+# Construa um programa que realiza ao cálculo da área de um ambiente. 
+# O algoritmo deve receber a largura (x) e a profundidade (y) e 
+# apresentar o cálculo da área (w) através da seguinte frase 
+# “O ambiente possui largura de x e profundidade de y, totalizando w metros
+# quadrados”
+
+imprima "Informe a largura: "
+var largura := leia_inteiro
+imprima "Informe a profundidade: "
+var profundidade := leia_inteiro
+
+area = (largura*profundidade)
+
+imprima "O ambiente possui largura de {largura} e profundidade de {profundidade}, totalizando {area} metros quadrados"
