@@ -9,8 +9,6 @@
 # o seu algoritmo deverá informar que o aluno está em recuperação e em quais
 # disciplinas
 
-## AINDA EM CONSTRUÇÃO
-
 imprima "Digite o valor da media em iti: "
 var iti := leia_inteiro
 imprima "Digite o valor da media em matematica: "
@@ -26,32 +24,12 @@ var logica := leia_inteiro
 
 media = (iti*60 + matematica*40 + ingles*40 + sistemas*60 + arquitetura*20 + logica*60)/280
 
-se media >= 5 então
-	escreva "Aluno aprovado por média."
+se iti < 3 or matematica < 3 or ingles < 3 or sistemas < 3 or arquitetura < 3 or logica < 3 então
+	escreva "Aluno reprovado"
 senão
-	se iti >= 3 então
-        se matematica >= 3 então
-            se ingles >= 3 então
-                se sistemas >= 3 então
-                    se arquitetura >= 3 então
-                        se logica >= 3 então
-                    		escreva "Aluno em recuperação"
-	                    senão
-		                    escreva "Aluno reprovado"
-	                    fim
-                    senão
-		                escreva "Aluno reprovado"
-                    fim
-                senão
-		            escreva "Aluno reprovado"
-                fim
-            senão
-		        escreva "Aluno reprovado"
-            fim
-        senão
-		    escreva "Aluno reprovado"
-        fim
-    senão
-		escreva "Aluno reprovado"
-    fim
+	se media >= 5 então
+		escreva "Aluno aprovado por média."
+	senão
+		escreva "Aluno em recuperação"
+	fim
 fim
