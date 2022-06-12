@@ -1,0 +1,17 @@
+# Exercício 14
+# Construa um programa que recebe 4 valores (x, y, z e w)
+# e que realiza o seguinte cálculo, apresentado o valor de c ao final.
+# c = ((((((x+y)/z)+w))/z)+w)/(x+y*y-w)
+
+imprima "Digite o valor de X: "
+var x:=leia_inteiro
+imprima "Digite o valor de Y: "
+var y:=leia_inteiro
+imprima "Digite o valor de Z: "
+var z:=leia_inteiro
+imprima "Digite o valor de W: "
+var w:=leia_inteiro
+
+resultado := ((((((x+y)/z)+w))/z)+w)/(x+y*y-w)
+
+imprima "O resultado vale {resultado}."

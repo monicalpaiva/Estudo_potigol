@@ -1,0 +1,15 @@
+# Exercício 13
+# Implemente um programa que recebe 3 valores (a, b e c) e que realiza
+# o seguinte cálculo, apresentado o resultado da expressão ao final.
+# r = -a-(b+c*a*b)/(c*a)
+
+imprima "Digite o primeiro valor:"
+var a:= leia_inteiro
+imprima "Digite o segundo valor: "
+var b:= leia_inteiro
+imprima "Digite o terceiro valor: "
+var c:= leia_inteiro
+
+resultado = (-a)-((b+c*a*b)/(c*a))
+
+escreva "O valor vale {resultado}"

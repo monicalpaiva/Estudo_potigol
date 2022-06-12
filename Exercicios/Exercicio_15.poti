@@ -1,0 +1,17 @@
+# Exercício 15
+# O volume de figuras geométricas pode ser determinado através de funções matemáticas. 
+# Construa um programa que receberá os dados necessários e, então, calcula o volume de um 
+# prisma de base triangular.
+# O Volume de um prisma de base triangular pode ser calculado por 
+# v = (((a*b))/2)*c
+
+imprima "Digite o valor de a: "
+var a:=leia_inteiro
+imprima "Digite o valor de b: "
+var b:=leia_inteiro
+imprima "Digite o valor de c: "
+var c:=leia_inteiro
+
+resultado := (((a*b))/2)*c
+
+imprima "O resultado vale {resultado}."
