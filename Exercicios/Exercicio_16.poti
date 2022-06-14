@@ -1,0 +1,20 @@
+# Exercício 16
+# É constante o uso de senhas para controlar o acesso aos sistemas. Como uma das
+# etapas de seleção para uma vaga de programador lhe foi dada a tarefa de construir 
+# um pequeno programa que verifica se a palavra digitada é a senha de acesso. Para 
+# isso você deve construir um programa que irá verificar se a senha digitada é 
+# 20p@ssword22. Se a senha estiver correta o seu programa deve emitir a mensagem 
+# Acesso concedido, caso contrário o programa deverá informar Senha incorreta!. 
+# Enquanto a senha correta não for digitada, o seu programa aguarda nova senha.
+
+var senha:= "20p@ssword22"
+imprima "Digite a senha: "
+var tentativa_de_senha:= leia_texto
+
+enquanto senha <> tentativa_de_senha faça
+    escreva "Senha incorreta!"
+    escreva "Digite uma senha correta: "
+    tentativa_de_senha:= leia_texto
+fim
+
+imprima "Acesso cedido..."

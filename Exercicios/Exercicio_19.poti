@@ -1,0 +1,21 @@
+# Exercício 19
+# Escreva um programa que recebe 2 valores inteiros e desenha um retângulo x por y. Por exemplo, 
+# se os valores 4 e 6 são informados ao seu programa, ele deve apresentar como saída a figura 
+# abaixo, utilizando o caractere *.
+
+# * * * * * *
+# * * * * * *
+# * * * * * *
+# * * * * * *
+
+imprima "Digite o número de colunas: "
+var colunas:= leia_inteiro
+imprima "Digite o número de linhas: "
+var linhas:= leia_inteiro
+
+para linha de 1 até linhas faça
+	para coluna de 1 até colunas faça
+    	imprima  "*"
+	fim
+    escreva
+fim

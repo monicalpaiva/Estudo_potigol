@@ -1,0 +1,33 @@
+# Exercício 18
+# A quantidade de veículos nas cidades é cada vez maior e por esse motivo algumas
+# dessas cidades estão implementando o “rodízio de veículos”. Esse rodízio consiste 
+# em proibir em determinados dias, de acordo com o último dígito da placa do veículo, 
+# que ele possa trafegar pela cidade. Por exemplo, se o código de bloqueio for 8 e a 
+# placa do carro é “UVA-0908”, significa que o veículo é proibido de rodar, pois o 
+# último dígito da placa (8) é igual ao código de bloqueio.
+
+# Construa um programa que receberá a quantidade de veículos que serão verificados e 
+# um número entre 0 e 9 que irá determinar qual é o código do bloqueio. Em seguida, 
+# solicita os 4 números da placa do veículo (de uma só vez, por exemplo: 0632). 
+# Seu programa deverá verificar se o último dígito da placa é igual ao dia proibido 
+# (o número 0 a 9 informado no início do programa) para a quantidade de carros 
+# informada no início do programa. Se o último dígito da placa for igual ao da
+# proibição, seu programa deve imprimir a mensagem “Veículo proibido de rodar”, 
+# caso contrário deverá imprimir “Veículo liberado de rodar”.
+
+imprima "Quantos carros serão verificados?"
+var quantidade_carros:= leia_inteiro
+imprima "Qual código de bloqueio?"
+var bloqueio:= leia_inteiro
+
+para i de 1 até quantidade_carros faça
+    imprima "Qual os quatro ultimos digitos da placa do carro?"
+    var placa:= leia_inteiro
+    resultado = placa mod 10
+    se bloqueio == resultado então
+        escreva "Carro bloqueado hoje!"
+    senão 
+        escreva "Carro liberado!"
+    fim
+fim
+escreva "Obrigada!"

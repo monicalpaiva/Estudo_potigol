@@ -1,0 +1,67 @@
+# Exercício 16
+# Uma loja de chá está implantando um novo software para que os clientes possam realizar
+# os pedidos. Assim eles necessitam de um programa que, para cada código, informa qual
+# é o chá pedido pelo cliente com base na tabela abaixo. Além disso, após informar o 
+# código do chá, o usuário deverá informar a quantidade de unidades desejada. Construa
+# o programa que solicita o código informado pelo usuário e a quantidade desejada. O 
+# seu programa informa qual foi o chá selecionado, quantas unidades, o valor unitário
+# do chá e o valor total do pedido. O programa só encerra quando um código e uma 
+# quantidade válida for informada, caso contrário solicita as informações (código e 
+# quantidade) novamente.
+# CB Chá de boldo R$ 1,50
+# CV Chá verde R$ 1,65
+# CP Chá preto R$ 1,99
+# CE Chá de ervas R$ 1,00
+# CM Chá mate
+
+var cb := 1.50
+var cv := 1.65
+var cp := 1.99
+var ce :=  1.00
+var cm := 1.99
+var quantidade := 0
+var valor_pagar := 0
+
+escreva "Digite o código do chá: "
+var codigo := leia_texto
+
+enquanto codigo <> "cb" and codigo <> "cv" and codigo <> "cp" and codigo <> "ce" and codigo <> "cm" faça
+        escreva "Digite um código valido:"
+        codigo := leia_texto  
+fim
+
+se codigo == "cb" então
+    escreva "Você escolheu Chá de boldo, agora digite a quantidade: " 
+    quantidade:= leia_inteiro
+    valor_pagar:=quantidade * cb
+    escreva "Você escolheu Chá de boldo e a quantidade de {quantidade},\n o valor a pagar é R$ {valor_pagar}!"
+    codigo:="fim"
+fim
+se codigo == "cv" então
+    escreva "Você escolheu Chá verde, agora digite a quantidade: " 
+    quantidade:= leia_inteiro
+    valor_pagar:=quantidade * cv
+    escreva "Você escolheu Chá verde e a quantidade de {quantidade}, \n o valor a pagar é R$ {valor_pagar}!"
+    codigo:="fim"
+fim
+se codigo == "cp" então
+    escreva "Você escolheu Chá preto, agora digite a quantidade: " 
+    quantidade:= leia_inteiro
+    valor_pagar:=quantidade * cp
+    escreva "Você escolheu Chá preto e a quantidade de {quantidade}, \n o valor a pagar é R$ {valor_pagar}!"
+    codigo:="fim"
+fim
+se codigo == "ce" então
+    escreva "Você escolheu Chá ervas, agora digite a quantidade: " 
+    quantidade:= leia_inteiro
+    valor_pagar:=quantidade * ce
+    escreva "Você escolheu Chá ervas e a quantidade de {quantidade}, \n o valor a pagar é R$ {valor_pagar}!"
+    codigo:="fim"
+fim
+se codigo == "cm" então
+    escreva "Você escolheu Chá mate, agora digite a quantidade: " 
+    quantidade:= leia_inteiro
+    valor_pagar:=quantidade * cm
+    escreva "Você escolheu Chá mate e a quantidade de {quantidade}, \n o valor a pagar é R$ {valor_pagar}!"
+    codigo:="fim"
+fim

@@ -14,4 +14,5 @@ var w:=leia_inteiro
 
 resultado := ((((((x+y)/z)+w))/z)+w)/(x+y*y-w)
 
+#tentando fazer a respostas ser 1f... mas não encontrei
 imprima "O resultado vale {resultado}."

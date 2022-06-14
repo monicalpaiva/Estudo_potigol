@@ -1,0 +1,27 @@
+# Exercício 20
+# Escreva um algoritmo utilizando, de forma aninhada, a estrutura de repetição para e que recebe 
+# dois valores inteiros como entrada.
+# Se o algoritmo receber os valores 3 e 5 a seguinte saída é apresentada:
+
+# 12345
+# 23456
+# 34567
+# 45678
+
+# Se o algoritmo receber os valores 2 e 6 a seguinte saída é apresentada:
+
+# 123456
+# 234567
+# 345678
+
+imprima "Digite o primeiro valor: "
+var primeiro:= leia_inteiro
+imprima "Digite o segundo valor: "
+var segundo:= leia_inteiro
+
+para i de 0 até primeiro faça
+    para j de 0 até segundo faça
+        imprima "{i+j}"
+    fim
+    escreva
+fim
