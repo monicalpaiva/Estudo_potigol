@@ -1,0 +1,30 @@
+# Exercício 21
+# Escreva um algoritmo utilizando, de forma aninhada, a estrutura de repetição ENQUANTO e que recebe 
+# dois valores inteiros como entrada.
+# Se o algoritmo receber os valores 3 e 5 a seguinte saída é apresentada:
+
+# 12345
+# 23456
+# 34567
+# 45678
+
+# Se o algoritmo receber os valores 2 e 6 a seguinte saída é apresentada:
+
+# 123456
+# 234567
+# 345678
+
+imprima "Digite o primeiro valor: "
+var primeiro:= leia_inteiro
+imprima "Digite o segundo valor: "
+var segundo:= leia_inteiro
+var terceiro:= segundo 
+
+enquanto primeiro <> 0 faça
+    enquanto segundo <> 0 faça
+        imprima "{i+j}"
+        segundo:=segundo -1
+    fim
+    escreva
+    segundo:=terceiro
+fim

@@ -1,0 +1,14 @@
+# A senha!
+# Escreva um programa que receberá uma palavra qualquer e verificará se a palavra 
+# digitada é a senha correta. Se a senha estiver correta, o programa deverá imprimir
+# a mensagem Senha correta, porém, se a senha não for correta, nada deverá ser 
+# impresso.
+
+# A senha correta é igualdade.
+
+var senha := "igualdade"
+var senhadigitada := leia_texto
+
+se (senha == senhadigitada) então
+	imprima "Senha correta"
+fim

@@ -1,0 +1,12 @@
+# Multiplicação e Divisão!
+# Construa um algoritmo que receberá 2 números reais (ponto flutuante) e que, em seguida, 
+# calcula a média entre eles. Ao final, escreva o resultado obtido no seguinte formato:
+
+# A média entre os números X e Y é R
+
+var num01 := leia_numero
+var num02 := leia_numero
+
+media := (num01+num02)/2
+
+escreva "A média entre os números {num01} e {num02} é {media}"

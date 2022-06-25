@@ -1,0 +1,10 @@
+# Positivo!?
+# Construa um algoritmo que receberá 1 número. Se o número for maior do que zero, 
+# seu algoritmo deverá imprimir a mensagem Número Positivo. Caso contrário, nada 
+# deverá ser impresso.
+
+var num := leia_numero
+
+se num > 0 então
+	imprima "Número Positivo"
+fim

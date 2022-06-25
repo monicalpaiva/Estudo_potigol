@@ -1,0 +1,16 @@
+# Multiplicação e Divisão 2!
+# Construa um algoritmo que receberá 3 números reais (X, Y e Z). Em seguida, realize o seguinte cálculo:
+
+# w= (X∗Y)/Z
+# O primeiro número (X) deverá multiplicar o segundo (Y), e o resultado dessa multiplicação deverá ser 
+# dividido pelo terceiro número (Z). Ao final, escreva o resultado obtido no seguinte formato:
+
+# O resultado da expressão é w
+
+var num01 := leia_numero
+var num02 := leia_numero
+var num03 := leia_numero
+
+var resultado := (num01*num02)/(num03)
+
+escreva "O resultado da expressão é {resultado}"

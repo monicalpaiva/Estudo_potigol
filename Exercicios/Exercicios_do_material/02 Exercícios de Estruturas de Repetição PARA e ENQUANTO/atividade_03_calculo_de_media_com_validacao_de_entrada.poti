@@ -1,0 +1,31 @@
+# Cálculo da Média com Validação de Entrada
+# No processo de desenvolvimento de programas é necessário implementar os 
+# algoritmos para que estes verifiquem se os valores informados pelo 
+# usuário são válidos. Por exemplo: em um programa de calcular a média 
+# de um aluno, as notas possuem valores de 0.0 a 10.0; qualquer valor
+# abaixo de 0.0 ou acima de 10.0 são inválidos nessa situação.
+
+# Pronto para um novo desafio? Vamos lá! Você deverá construir um programa
+#  que receba 2 notas válidas (cujo valor mínimo é 0.0 e o máximo é 10.0).
+#  Caso um valor inválido seja fornecido, o programa deve escrever a
+#  mensagem Nota com valor inválido! e aguardar a entrada de um novo valor.
+# Essa validação deverá ser repetida até que sejam informadas 2 notas 
+# válidas. Quando o programa receber as 2 notas válidas, deverá calcular
+# a média aritmética dos valores e escreve-la.
+
+var nota01 := leia_numero
+
+enquanto nota01 < 0 or nota01 > 10 faça
+	escreva "Nota com valor inválido!"
+    nota01:= leia_numero
+fim
+
+var nota02 := leia_numero
+enquanto nota02 < 0 or nota02 > 10 faça
+	escreva "Nota com valor inválido!"
+    nota02:=leia_numero
+fim
+
+var media := 0
+media:= (nota01+nota02)/2
+escreva media

@@ -1,0 +1,26 @@
+# Curiosidade 
+# Na matemática, um número perfeito é um número inteiro cuja soma de todos
+# os seus divisores positivos próprios (excluindo ele mesmo) é igual ao 
+# próprio número. Por exemplo: o número 6 é perfeito, pois 1+2+3 é igual 
+# a 6.
+
+# Número Perfeito
+# Construa um programa que receba um número inteiro e que verifique se ele
+# é um número perfeito. Caso o número seja perfeito, o programa deve 
+# imprimir "é um número perfeito". Caso contrário, a mensagem "não é 
+# um número perfeito" deve ser impressa.
+
+var num := leia_inteiro
+var soma := 0
+
+para i de 1 até (num -1) passo 1 faça
+	se (num mod i) == 0 faça
+    	soma:= soma + i
+	fim
+fim
+
+se soma == num então
+	imprima "é um número perfeito"
+senão
+	imprima "não é um número perfeito"
+fim

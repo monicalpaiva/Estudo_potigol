@@ -1,0 +1,26 @@
+# Intervalo
+# Você construirá um programa que recebe 3 números inteiros. 
+# Em seguida, o programa deverá verificar se o terceiro número está entre 
+# o primeiro e o segundo número fornecido.
+
+# Se o terceiro número estiver entre o intervalo do primeiro e do segundo,
+# o programa deve escrever a mensagem Dentro do Intervalo entre X e Y. 
+# Caso esteja fora, o programa deve escrever Fora do Intervalo entre X e Y.
+# Os caracteres X e Y devem ser substituídos pelo valor do primeiro e do 
+# segundo número, respectivamente.
+
+# Exemplo 1: Se o programa recebe os números 1, 3 e 9, a saída do programa
+# é, então, Fora do Intervalo entre 1 e 3.
+    
+# Exemplo 2: Porém, se o programa recebe os números 65, 100 e 88, a saída
+# do programa é, então, Dentro do Intervalo entre 65 e 100.
+
+var num01 := leia_inteiro
+var num02 := leia_inteiro
+var num03 := leia_inteiro
+
+se num01 < num03 and num02 > num03 então
+    escreva "Dentro do Intervalo entre {num01} e {num02}"
+senão
+    escreva "Fora do Intervalo entre {num01} e {num02}"
+fim

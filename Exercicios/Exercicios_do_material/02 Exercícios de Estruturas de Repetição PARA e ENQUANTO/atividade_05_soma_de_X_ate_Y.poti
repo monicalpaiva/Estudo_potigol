@@ -1,0 +1,18 @@
+# Soma de X até Y
+# Utilizando o comando para, construa um algoritmo que recebe dois números
+# X e Y e que imprima a soma de todos os números de X até Y.
+
+# Exemplo 1: se os números informados foram 3 e 5, o programa deve 
+# somar 3+4+5 e imprimir o resultado 12.
+
+# Exemplo 2: se os números informados foram 10 e 15, o programa deve
+# somar 10+11+12+13+14+15 e imprimir o resultado 75.
+
+var num01 := leia_inteiro
+var num02 := leia_inteiro
+var resultado := 0
+
+para i de num01 até num02 faça
+		resultado:= resultado + i
+fim
+imprima resultado

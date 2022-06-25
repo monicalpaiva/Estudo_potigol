@@ -1,0 +1,17 @@
+# Acesso permitido!
+# Você construirá um programa que verifica se a senha digitada está correta!
+# Construa um algoritmo que receberá uma senha qualquer. 
+# Se a senha fornecida for a correta, o programa deverá imprimir a mensagem
+# Acesso Permitido, no entanto, se a senha digitada for diferente, 
+# o programa deverá imprimir Senha Inválida.
+
+# A senha: o programa deve verificar se a senha digitada é 200724040105.
+
+var senhadigitada := leia_texto
+var senha := "200724040105"
+
+se senha == senhadigitada então
+	imprima "Acesso Permitido"
+senão
+	imprima "Senha Inválida"
+fim

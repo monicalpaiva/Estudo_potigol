@@ -1,0 +1,21 @@
+# Múltiplos
+# Construa um programa que verifica se um número é múltiplo de outro. 
+# Seu programa deverá receber 2 números e verificar se o segundo número 
+# é múltiplo do primeiro. Caso o segundo número seja múltiplo do primeiro, 
+# o seu programa deve imprimir a mensagem São múltiplos. Caso contrário, 
+# a mensagem impressa pelo seu programa deve ser Não são múltiplos.
+
+# Exemplo 1: Se o programa recebe os números 3 e 9, a saída do programa 
+# é São múltiplos.
+
+# Exemplo 2: Se o programa recebe os números 5 e 9, a saída do programa é, 
+# então, Não são múltiplos.
+
+var num01 := leia_numero
+var num02 := leia_numero
+
+se (num02 mod num01) == 0 então
+    imprima "São múltiplos"
+senão
+    imprima "Não são múltiplos"
+fim

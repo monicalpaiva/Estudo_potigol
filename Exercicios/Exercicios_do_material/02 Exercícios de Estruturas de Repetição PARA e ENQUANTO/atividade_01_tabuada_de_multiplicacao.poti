@@ -1,0 +1,31 @@
+# Tabuada de Multiplicação
+# A matemática está sempre presente em nossas atividades, certo?
+# Mas nem sempre conhecemos o resultado da tabuada para todos os números,
+# não é mesmo? Por esse motivo, os primeiros exercícios serão relacionados
+# à construção de algoritmos para o cálculo da tabuada.
+
+# Vamos começar? Utilizando o para, construa um algoritmo que receberá
+# um número inteiro e que apresentará a tabuada de multiplicação do número 
+# fornecido.
+
+# Ex.: o programa recebe como entrada o valor 3 e apresentará como 
+# resultado as saídas:
+
+# 1x3=3
+# 2x3=6
+# 3x3=9
+# 4x3=12
+# 5x3=15
+# 6x3=18
+# 7x3=21
+# 8x3=24
+# 9x3=27
+# 10x3=30
+
+var num01 := leia_inteiro
+var resultado := 1
+
+para i de 1 até 10 faça
+	resultado := i * num01
+	escreva "{i}x{num01}={resultado}"
+fim

@@ -1,0 +1,73 @@
+# Qual o DDD?
+# O seu programa deverá receber um número inteiro. Ao final, 
+# o programa deverá imprimir de qual estado é o DDD, utilizando o 
+# seguinte formato: XX-Nome do Estado. Caso o número digitado não 
+# esteja presente na tabela abaixo, o programa deverá imprimir a mensagem 
+# DDD não encontrado.
+
+# 11-SãoPaulo
+# 21-Rio de Janeiro
+# 27-Espirito Santo
+# 31-Minas Gerais
+# 41-Paraná
+# 47-Santa Catarina
+# 51-Rio Grande do Sul
+# 61-Distrito Federal
+# 62-Goáis
+# 63-Tocantins
+# 65-Mato Grosso
+# 67-Mato Grosso do Sul
+# 68-Acre
+# 69-Rondônia
+# 71-Bahia
+# 79-Sergipe
+# 81-Pernambuco
+# 82-Alagoas
+# 83-Paraíba
+# 84-Rio Grande do Norte
+# 85-Ceará
+# 86-Piauí
+# 91-Pará
+# 92-Amazônia
+# 95-Roraima
+# 96-Amapá
+# 98-Maranhão
+
+# Exemplo 1: O programa recebe o número 84, logo, a saída impressa será 
+# 84-Rio Grande do Norte.
+
+# Exemplo 2: O programa recebe o número 99, logo, a saída impressa será
+#  DDD não encontrado.
+
+var ddd := leia_inteiro
+
+escolha ddd
+	caso 11 => imprima "11-SãoPaulo"
+	caso 21 => imprima "21-Rio de Janeiro"
+	caso 27 => imprima "27-Espirito Santo"
+	caso 31 => imprima "31-Minas Gerais"
+	caso 41 => imprima "41-Paraná"
+	caso 47 => imprima "47-Santa Catarina"
+	caso 51 => imprima "51-Rio Grande do Sul"
+	caso 61  => imprima "61-Distrito Federal"
+	caso 62 => imprima "62-Goáis"
+	caso 63 => imprima "63-Tocantins"
+	caso 65 => imprima "65-Mato Grosso"
+	caso 67 => imprima "67-Mato Grosso do Sul"
+	caso 68 => imprima "68-Acre"
+	caso 69 => imprima "69-Rondônia"
+	caso 71 => imprima "71-Bahia"
+	caso 79 => imprima "79-Sergipe"
+	caso 81 => imprima "81-PErnambuco"
+	caso 82 => imprima "82-Alagoas"
+    caso 83 => imprima "83-Paraíba"
+	caso 84 => imprima "84-Rio Grande do Norte"
+	caso 85 => imprima "85-Ceará"
+	caso 86 => imprima "86-Piauí"
+	caso 91 => imprima "91-Pará"
+	caso 92 => imprima "92-Amazônia"
+	caso 95 => imprima "95-Roraima"
+	caso 96 => imprima "96-Amapá"
+	caso 98 => imprima "98-Maranhão"
+	caso_ => imprima "DDD não encontrado"
+fim

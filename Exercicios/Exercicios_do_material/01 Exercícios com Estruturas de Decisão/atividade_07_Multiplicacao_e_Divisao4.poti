@@ -1,0 +1,19 @@
+# Multiplicação e Divisão 4!
+# Construa um algoritmo que receberá 3 números reais. Em seguida, calcula a média 
+# ponderada desses três números. Ao final, realize apenas a impressão do resultado 
+# obtido. A fórmula dessa média é a seguinte:
+
+# media=nota1×4+nota2×5+nota3×615
+
+# Observe que o primeiro número (nota1) deverá ser multiplicado por 4, em seguida, 
+# o segundo número (nota2) deverá ser multiplicado por 5 e, então, o terceiro número
+# (nota3) deverá ser multiplicado por 6. Essas multiplicações deverão ser somadas e 
+# o resultado dessa soma será dividido por 15.
+
+var num01 := leia_numero
+var num02 := leia_numero
+var num03 := leia_numero
+
+var media := ((num01*4)+(num02*5)+(num03*6))/15
+
+imprima media

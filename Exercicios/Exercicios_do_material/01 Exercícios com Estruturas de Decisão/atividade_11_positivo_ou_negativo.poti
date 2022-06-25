@@ -1,0 +1,13 @@
+# Positivo ou Negativo?
+# Construa um algoritmo que receberá um número. Se esse for maior que zero,
+# seu algoritmo deverá imprimir a mensagem Número Positivo. Caso contrário,
+# deverá imprimir a mensagem Número Negativo. Se o número for zero, 
+# nada deverá ser impresso.
+
+var num := leia_numero
+
+se num > 0 então
+	imprima "Número Positivo"
+senãose num < 0 então
+	imprima "Número Negativo"
+fim

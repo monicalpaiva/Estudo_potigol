@@ -1,0 +1,13 @@
+# Multiplicação!
+# Construa um algoritmo que receberá 3 números inteiros (x1, x2 e x3) e que, em seguida, realizará a 
+# multiplicação desses números. Ao final, escreva o resultado (r) obtido no seguinte formato:
+
+# O resultado da multiplicação de x1*x2*x3 é r
+
+var num01 := leia_inteiro
+var num02 := leia_inteiro
+var num03 := leia_inteiro
+
+multiplicacao = num01*num02*num03
+
+escreva "O resultado da multiplicação de {num01}*{num02}*{num03} é {multiplicacao}"

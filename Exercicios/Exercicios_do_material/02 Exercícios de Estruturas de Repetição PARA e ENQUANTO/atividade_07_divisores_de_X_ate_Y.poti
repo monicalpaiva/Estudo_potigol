@@ -1,0 +1,18 @@
+# Divisores de X até Y
+# Construa um algoritmo que receba dois números X e Y e que apresenta 
+# todos os divisores de Y a partir do valor X.
+
+# Exemplo 1: se os números fornecidos foram 2 e 16, o programa imprimirá,
+#  um abaixo do outro (um por linha), os números: 2, 4 e 8.
+
+# Exemplo 2: se os números fornecidos foram 5 e 25, o programa imprimirá,
+# um abaixo do outro (um por linha), o número: 5.
+
+var primeiro := leia_inteiro
+var segundo := leia_inteiro
+
+para primeiro de primeiro até (segundo -1) passo 1 faça
+	se (segundo mod primeiro) == 0 faça
+    	escreva "{primeiro}"
+	fim
+fim

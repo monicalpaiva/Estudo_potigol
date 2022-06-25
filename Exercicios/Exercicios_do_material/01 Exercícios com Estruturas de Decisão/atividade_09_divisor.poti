@@ -1,0 +1,15 @@
+# Divisor
+# Construa um algoritmo que receberá 2 números inteiro. O seu programa deverá 
+# verificar se o primeiro número é divisor do segundo número. Por exemplo: se os 
+# números fornecidos são 6 e 3, então, pode-se dizer que 3 é divisor de 6, pois, 
+# ao realizar essa divisão, o resto é zero.
+
+# Se o segundo número for divisor do primeiro, o programa deverá imprimir a mensagem
+# É divisor. Caso contrário, nada deverá ser impresso.
+
+var num01 := leia_numero
+var num02 := leia_numero
+
+se (num01 mod num02) == 0 então
+	imprima "É divisor"
+fim
