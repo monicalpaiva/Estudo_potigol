@@ -5,3 +5,27 @@
 # que leia um inteiro N (N < 46) e que mostre os N primeiros números
 # dessa série, na sequência de um número por linha.
 
+#AINDA INCOMPLETO
+
+​var numero := leia_inteiro
+var anterior01 := 0
+var anterior02 := 1
+var atual := 1
+
+enquanto numero > 46 faça
+	numero:= leia_inteiro
+fim
+
+escreva "0" 
+se numero == 1 faça
+	escreva anterior01
+senãose numero == 2 faça
+	escreva anterior02
+senao
+    enquanto anterior02 < numero faça
+        escreva anterior02
+        atual := anterior01 + anterior02
+        anterior01 := anterior02
+        anterior02 :=  atual
+    fim
+ fim
