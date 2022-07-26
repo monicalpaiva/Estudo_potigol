@@ -1,0 +1,19 @@
+# Triângulo
+# Utilizando o aninhamento de enquanto, implemente um programa que recebe um número inteiro e escreve o seguinte triângulo. A altura da figura será igual ao número inteiro recebido pelo programa.
+
+# Fique atento! Há apenas um espaço em branco entre os caracteres * de uma mesma linha.
+
+# *
+# * *
+# * * *
+# * * * *
+
+var linha := leia_inteiro
+var escrita := "* "
+
+enquanto linha > 0 faça
+    	imprima "{escrita}"
+        escrita := escrita + "* "
+        linha := linha -1
+        escreva ""
+fim

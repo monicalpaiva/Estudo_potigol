@@ -1,0 +1,28 @@
+# Todos os Números Perfeitos
+# Construa um programa que receba um número inteiro e que verifica e 
+# apresenta todos os números perfeitos de 1 até o número informado. 
+# Caso encontre um número que seja perfeito, o programa deve imprimir 
+# a mensagem "x é um número perfeito", na qual x é o número encontrado. 
+# Cada mensagem deve ser impressa uma abaixo da outra.
+
+# Na matemática, um número perfeito é um número inteiro cuja soma de todos
+# os seus divisores positivos próprios (excluindo ele mesmo) é igual ao 
+# próprio número. Por exemplo: o número 6 é perfeito, pois 1+2+3 é igual
+# a 6.
+
+var numero := leia_inteiro
+var sub_numero := 2
+var soma := 0
+
+enquanto sub_numero < numero faça
+	para i de 1 até (sub_numero - 1) faça
+    	se sub_numero mod i == 0 então
+        	soma := soma + i
+        fim
+    fim
+    se soma == sub_numero então
+    	escreva "{sub_numero} é um número perfeito"
+    fim
+    sub_numero := sub_numero +1
+    soma := 0
+fim

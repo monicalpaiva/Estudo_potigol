@@ -1,0 +1,43 @@
+# Primo ou composto!
+# Escreva um programa que recebe um número inteiro. Seu programa irá verificar, do 2 até o número informado, quais são os números primos e quais não são.
+
+# Caso seja primo, imprima como no exemplo abaixo:
+
+# 11 primo
+# Se o número não for primo o programa mostra o número seguido da palavra composto e abaixo a lista de seus divisores, com exceção do 1 e dele mesmo, como no exemplo a abaixo:
+
+# 10 composto
+# 2
+# 5
+# Considerando a entrada igual a 6, a saída esperada para o seu algoritmo é:
+
+# 2 primo
+# 3 primo
+# 4 composto
+# 2
+# 5 primo
+# 6 composto
+# 2
+# 3
+
+var num := leia_inteiro
+var contador := 0 
+
+para i de 2 até num faça 
+		contador := 0
+   para j de 1 até i faça 
+	 se i mod j == 0 então
+		contador := contador + 1
+	fim
+fim
+		se contador == 2 então
+			escreva "{i} primo"
+		senão
+			escreva "{i} composto"
+			para k de 2 até i faça 
+				se i mod k == 0 |e| i <> k então
+				escreva k
+				fim
+		fim
+	fim
+fim

@@ -1,0 +1,35 @@
+# Comece pelo Desafio! Vá na sequência de 6.
+# Crie um algoritmo que recebe uma quantidade indefinida de números inteiros aleatórios. O programa encerra quando uma sequência crescente de 6 números é informada. Ao final, o programa escreve a sequência dos 6 números, um abaixo do outro.
+
+# São exemplos de sequências válidas para encerrar o programa:
+
+# 1, 2, 3, 4, 5, 6.
+# 19, 20, 21, 22, 23, 24.
+# Não são sequências válidas para encerrar o programa:
+
+# 1, 2, 4, 5, 6, 7.
+# 21, 23, 25, 27, 28, 29.
+
+var sequencia := false
+var numero := leia_inteiro
+var numeroanterior := numero
+var contador := 0
+var inicio_sequencia := 0
+
+enquanto sequencia == falso faça
+	numero := leia_inteiro
+	se numero == (numeroanterior + 1) faça
+        contador := contador + 1
+    senão
+    	contador := 0
+	fim
+    numeroanterior := numero
+	se contador == 5 então
+    	sequencia := true
+        inicio_sequencia := numeroanterior - 5
+     fim
+fim   	
+
+para i de inicio_sequencia até (inicio_sequencia + 5) faça
+	escreva i
+fim

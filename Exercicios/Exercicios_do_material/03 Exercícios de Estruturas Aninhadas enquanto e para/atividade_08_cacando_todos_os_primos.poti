@@ -1,0 +1,19 @@
+# Caçando todos os primos
+# Construa um programa que receba um número qualquer e que apresente todos
+# os números primos de 1 até o número informado, um abaixo do outro. 
+# Números primos são números divisíveis apenas por 1 e por ele mesmo.
+
+var num := leia_inteiro
+var contador := 0 
+
+para i de 2 até num faça 
+		contador := 0
+   para j de 1 até i faça 
+	 se i mod j == 0 então
+		contador := contador + 1
+	fim
+  fim
+  se contador == 2 então
+		escreva "{i}"
+  fim
+fim

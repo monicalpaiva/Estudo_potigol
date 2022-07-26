@@ -1,0 +1,21 @@
+# Imprimindo pontos
+# Utilizando o aninhamento de para, crie um programa que recebe um valor inteiro e desenha um retângulo de tamanho z por z, utilizando o caractere *.
+
+# Fique atento! Há apenas um espaço em branco entre os caracteres * de uma mesma linha.
+
+# Veja o exemplo para uma entrada igual a 2.
+
+# * *
+# * *
+
+var numero := leia_inteiro
+var inicio_sequencia := 0
+var escrita := "*"
+#Ainda falta melhorar
+
+para i de 1 até (numero) faça
+	para j de 1 até (numero) faça
+    	imprima "{escrita} "
+    fim
+    escreva ""
+fim

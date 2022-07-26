@@ -1,0 +1,19 @@
+# Triângulo 2
+# Utilizando o aninhamento de para, implemente um programa que recebe um número inteiro e escreve o seguinte triângulo. A altura da figura será igual ao número inteiro recebido pelo programa.
+
+# Fique atento! Há apenas um espaço em branco entre os caracteres * de uma mesma linha.
+
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+
+var linha := leia_inteiro
+var escrita := "*"
+
+para i de linha até 2 passo -1 faça
+	escrita := "* "*i
+    escreva "{escrita}"
+fim
+imprima "*"

@@ -1,0 +1,44 @@
+# Sequência interrompida
+# Faça um programa que recebe uma quantidade indefinida de números inteiros até que o 0 (zero) seja informado. Seu programa deverá procurar pela maior sequência numérica existente.
+
+# São exemplos de sequências:
+
+# 3, 4, 5, 6, 7, 8, 9, 10.
+# 200, 201, 202, 203, 204, 205.
+# Não são consideras sequências válidas:
+
+# 1, 79, 34, 54, 65, 88, -50.
+# 45, -35, -68, 6, 25.
+# Ao final, seu programa irá escrever o primeiro termo da maior sequência encontrada e a quantidade de termos da sequência. Para os exemplos de sequeência acima, a saída do seu programa será no seguinte formato:
+
+# Termo inicial: 3
+# Maior sequência: 8
+
+var quantidade := 1
+var quantidadefinal := 0
+var inicial := 0
+var	atual := leia_inteiro
+var posterior := leia_inteiro
+
+enquanto atual <> 0 and posterior <> 0 faça
+    se atual == (posterior - 1) faça
+        se atual <> 0 and posterior <> 0 faça
+          atual := posterior
+          posterior := leia_inteiro
+          quantidade := quantidade + 1
+        fim
+         se quantidadefinal < quantidade faça
+     		quantidadefinal := quantidade
+        	inicial := atual - quantidade + 1
+    	fim
+     senão
+     	se atual <> 0 and posterior <> 0 faça
+          quantidade := 1
+          atual := posterior
+          posterior := leia_inteiro
+        fim
+     fim     
+fim
+
+escreva "Termo inicial: {inicial}"
+escreva "Maior sequência: {quantidadefinal}"
