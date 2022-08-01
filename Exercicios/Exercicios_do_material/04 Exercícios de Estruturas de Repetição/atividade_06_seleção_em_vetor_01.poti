@@ -1,0 +1,51 @@
+# Seleção em Vetor I
+# Construa um algoritmo que irá receber e armazenar 20 números reais.
+
+# Em seguida, o seu programa deverá escrever a média aritmética de todos os valores.
+# Na linha seguinte, imprima todos que estão acima da média. Na terceira linha, 
+# imprima os números que estão abaixo da média. Os números devem estar separados
+# por um espaço em branco simples (a sua direira).
+
+# Para a entrada 51.2, 39.83, 86.71, 78.72, 71.80, 82.0, 90.87, 43.9, 60.76, 4.12, 
+# 80.10, 49.29, 0.42, 20.95, 72.88, 16.52, 65.3, 92.78, 27.74 e 56.4, 
+# será apresentada a saída:
+
+# 54.6145
+# 86.71 78.72 71.8 82.0 90.87 60.76 80.1 72.88 65.3 92.78 56.4 
+# 51.2 39.83 43.9 4.12 49.29 0.42 20.95 16.52 27.74 
+# Obs.: Números iguais a média não serão impressos.
+
+var numeros := vetor[20]
+var numeroacima := vetor[20]
+var indiceA := 0
+var numeroabaixo := vetor[20]
+var indiceB := 0
+var media := 0
+
+para i de 0 até 19 faça
+	numeros[i] := leia_numero
+fim
+
+para i de 0 até 19 faça
+	media := media + numeros[i]
+fim
+media := media/20
+
+para i de 0 até 19 faça
+	se numeros[i] > media
+    	numeroacima[indiceA] := numeros[i]
+        indiceA := indiceA + 1
+    senãose numeros[i] < media
+    	numeroabaixo[indiceB] := numeros[i]
+        indiceB := indiceB + 1
+   fim
+fim
+
+escreva media
+para i de 0 até (indiceA - 1) faça
+	imprima "{numeroacima[i]} "
+fim
+escreva ""
+para i de 0 até (indiceB -1) faça
+	imprima "{numeroabaixo[i]} "
+fim

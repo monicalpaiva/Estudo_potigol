@@ -1,0 +1,57 @@
+# Preenchendo e Lendo um Vetor III
+# Construa um programa com 2 vetores, cada um de 10 posições. O seu algoritmo 
+# receberá 15 números inteiros. Os números ímpares deverão ser armazenados no 
+# primeiro vetor. Já os pares serão armazenados no segundo vetor. Se um vetor 
+# ficar cheio (completar as 10 posições) durante a leitura dos valores, 
+# você deverá "descartar" o valor mais antigo (a primeira posição do vetor) e 
+# mover as posições subsequentes em "uma casa para esquerda" para que seja possível
+#  armazenar o 10º valor. Repita essa operação quantas vezes for necessário, até 
+# que todos os 15 valores sejam lidos pelo seu programa.
+
+# Ao final, o algoritmo deverá imprimir os números armazenados no primeiro vetor 
+# em uma linha, e os armazenados no segundo vetor na linha imediatamente abaixo.
+# Os números devem estar separados por um espaço em branco simples.
+
+
+#PRECISA CORREÇÕES
+
+var numerospares := vetor[10]
+var indicepar := 0
+var numerosimpares := vetor[10]
+var indiceimpar := 0
+var numero := 0
+
+para i de 0 até 15 faça
+	numero := leia_inteiro
+    se numero mod 2 == 0 então
+       	numerosimpares[indiceimpar]:= numero
+     	indiceimpar := indiceimpar + 1
+        se i < 15 então
+          se indiceimpar == 10 então
+              para i de 0 até (indiceimpar -1) faça
+                  numerosimpares[i] := numerosimpares[i + 1]
+              fim
+              indiceimpar := 9
+          fim
+        fim
+   senão
+        numerospares[indicepar]:= numero
+     	indicepar := indicepar + 1
+        se i < 15 então
+          se indicepar == 10 então
+              para i de 0 até (indicepar -1) faça
+                  numerospares[i] := numerospares[i + 1]
+              fim
+              indicepar := 9
+          fim
+        fim
+   fim
+fim
+
+para i de 0 até 9 faça
+	imprima "{numerospares[i]} "
+fim
+escreva ""
+para i de 0 até 9 faça
+	imprima "{numerosimpares[i]} "
+fim

@@ -1,0 +1,40 @@
+# Preenchendo e Lendo um Vetor II
+# Construa um algoritmo que receberá 30 valores inteiros.
+
+# Ao final, seu algoritmo devá apresentar os números pares em uma linha e na linha 
+# seguinte os números ímpares, na ordem em que foram lidos.
+
+# Se os valores recebidos pelo algoritmo são:
+
+# -30, -55, 28, -23, -93, 80, 90, 75, -7, -2, 96, 57, -24, -46, -66,
+# 87, 74, -39, 21, -81, -6, -65, 27, 94, -42, -1, -50, -94, -71 e -91.
+# Ele deverá apresentar o resultado no seguinte formato:
+
+# -30, 28, 80, 90, -2, 96, -24, -46, -66, 74, -6, 94, 42, -50, -94, 
+# -55, -23, -93, 75, -7, 57, 87, -39, 21, -81, -65, 27, -1, -71, -91, 
+# Obs.: Há um espaço em branco a direita de cada vírgula.
+
+var numero := vetor[30]
+var pares := vetor[30]
+var impares := vetor[30]
+var contpar := 0
+var contimpar := 0
+
+para i de 0 até 29 faça
+	numero[i] := leia_inteiro
+	se (numero[i] mod 2) == 0 então
+    	pares[contpar] := numero[i]
+        contpar := contpar + 1
+    senão
+    	impares[contimpar] := numero[i]
+        contimpar := contimpar + 1
+	fim
+fim
+
+para i de 0 até (contpar -1) faça
+	imprima "{pares[i]}, "
+fim
+escreva ""
+para i de 0 até (contimpar -1) faça
+	imprima "{impares[i]}, "
+fim

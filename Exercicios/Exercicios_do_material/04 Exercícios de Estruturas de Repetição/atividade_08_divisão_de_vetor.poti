@@ -1,0 +1,16 @@
+# Divisão no Vetor
+# Construa um algoritmo que recebe e armazena até 100 números inteiros. 
+# Quando o valor 0 (zero) for recebido pelo seu algoritmo, interrompa o recebimento
+# de novos valores (e não armazene o 0 (zero)).
+
+# Em seguida, o seu programa deverá imprimir todos os números que são divisíveis 
+# pelo último número armazenado no vetor. Escreva os valores na ordem inversa em
+# que foram lidos. Por exemplo, para os números armazenados no vetor:
+
+# 11 5 4 10 2 1 9 16 57 19 3
+# Serão impressos, na ordem inversa, os números divisíveis por 3 
+# (último número armazenado):
+
+# 57
+# 9
+

@@ -1,0 +1,5 @@
+# Ordenação de Um Vetor
+# Construa um algoritmo que receberá 100 números inteiros. 
+# Utilizando apenas um único vetor, o seu algoritmo deverá ordenar os valores 
+# lidos em ordem crescente. Ao final, o programa deverá realizar a impressão dos 
+# números ordenados (um por linha).

@@ -1,0 +1,42 @@
+# Preenchimento de Vetor I
+# Construa um algoritmo com um vetor de 100 posições. Esse algoritmo irá receber uma quantidade indefinida de valores inteiros e armazena-los no vetor. Quando o valor 0 (zero) for recebido pelo seu algoritmo, interrompa o recebimento de novos valores (e não armazene o 0 (zero)).
+
+# Em seguida, o seu algoritmo deverá verificar se os elementos armazenados nos índices pares são divisíveis pelos elementos imediatamentes posteriores (índice+1).
+
+# Por exemplo, se o os valores 38, 16, 29, 34, 33, 3, 35, 7, 19, 30 e 0 são recebidos pelo seu algoritmo, ele terá como saída o seguinte resultado:
+
+# Conteúdo do vetor:
+# 38, 16, 29, 34, 33, 3, 35, 7, 19, 30, 
+# 38 não é divisível por 16
+# 29 não é divisível por 34
+# 33 é divisível por 3
+# 35 é divisível por 7
+# 19 não é divisível por 30
+# Obs.: Há um espaço em branco a direita de cada vírgula.
+
+var numeros := vetor[100]
+var indice := 0
+var parada :=  true
+var numero := 1
+
+enquanto parada faça
+	numero := leia_inteiro
+    se numero <> 0 então
+    	numeros[indice]:= numero
+        indice := indice + 1
+    senão
+    	parada := false
+     fim
+fim
+escreva "Conteúdo do vetor:"
+para i de 0 até (indice -1) faça
+	imprima "{numeros[i]}, "
+fim
+escreva ""
+para i de 0 até (indice-2) passo 2 faça
+	se numeros[i] mod numeros[i+1] == 0 então
+    	escreva "{numeros[i]} é divisível por {numeros[i+1]}"
+    senão
+    	escreva "{numeros[i]} não é divisível por {numeros[i+1]}"
+    fim
+fim

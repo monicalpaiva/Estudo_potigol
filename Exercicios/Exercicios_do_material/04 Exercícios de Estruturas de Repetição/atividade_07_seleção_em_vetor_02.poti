@@ -1,0 +1,17 @@
+# Seleção em Vetor II
+# Construa um algoritmo que recebe e armazena até 100 números inteiros. 
+# Quando o valor 0 (zero) for recebido pelo seu algoritmo, interrompa o 
+# recebimento de novos valores (e não armazene o 0 (zero)).
+
+# Em seguida, imprima os números lidos em uma linha, separados por espaços em branco.
+
+# O seu programa deverá procurar, no vetor lido, os valores que são menores do que 
+# zero e inverter o sinal para que fiquem positivos. Além disso, os números deverão
+# ser impressos na ordem inversa que foram lidos. Por exemplo, se o vetor lido for:
+
+# 11 5 -4 10 -2 1 9 16 57 -19
+# O segundo vetor impresso será:
+
+# 19 57 16 9 1 2 10 4 5 11
+# Obs.: Há um espaço em branco a direita de cada número.
+

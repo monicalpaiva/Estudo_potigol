@@ -1,0 +1,43 @@
+# Menor e Posição
+# Construa um algoritmo que receberá 100 valores inteiros. Ao final, o algoritmo 
+# irá imprimir o menor valor recebido. O índice em que o menor valor está armazenado.
+# Por último, os valores armazenados nas posições imediatamente anterior e posterior
+# ao menor elemento encontrado. Obedeça o seguinte formato para apresentar as 
+# informações:
+
+# Menor valor recebido: 10
+# Índice do menor valor: 19
+# Valor armazenado na posição anterior [18]: 12 
+# Valor armazenado na posição posterior [20]: 34
+# Caso o menor valor esteja na primeira posição, seu algoritmo não deve imprimir a 
+# linha correspondente ao elemente anterior e se estiver na última posição, não 
+# deve imprimir o elemento posterior.
+
+var numero := vetor[100]
+var menor := 0
+var temporaria :=0
+var indice := 0
+
+para i de 0 até 99 faça
+	numero[i] := leia_inteiro
+fim
+menor := numero[0]
+para i de 0 até 99 faça
+    se numero[i] < menor faça
+    	menor := numero[i]
+        indice := i
+   fim    	
+fim
+
+escreva "Menor valor recebido: {menor}"
+escreva "Índice do menor valor: {indice}"
+se indice < 1 então
+	escreva "Valor armazenado na posição posterior [{indice+1}]: {numero[indice+1]}"
+fim
+se indice > 98 então
+	escreva "Valor armazenado na posição anterior [{indice-1}]: {numero[indice-1]}"
+fim
+se indice > 1 and indice < 99 então
+	escreva "Valor armazenado na posição anterior [{indice-1}]: {numero[indice-1]}"
+	escreva "Valor armazenado na posição posterior [{indice+1}]: {numero[indice+1]}"
+fim
