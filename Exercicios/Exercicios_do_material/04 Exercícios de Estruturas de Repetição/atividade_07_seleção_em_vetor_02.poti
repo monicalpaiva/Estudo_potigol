@@ -15,3 +15,35 @@
 # 19 57 16 9 1 2 10 4 5 11
 # Obs.: Há um espaço em branco a direita de cada número.
 
+var numero := 1
+var numeros := vetor[100]
+var numerosinvertidos := vetor[100]
+var indice := 0
+
+enquanto numero <> 0 faça
+	numero := leia_inteiro
+    se numero <> 0 faça
+		numeros[indice] := numero
+    	indice := indice + 1
+    fim
+fim
+
+para i de 0 até (indice -1) faça
+	imprima "{numeros[i]} "
+fim
+
+para i de 0 até (indice - 1) faça
+	se numeros[i] < 0 então
+    	numeros[i] := numeros[i] * (-1)
+     fim
+fim
+
+para i de 0 até (indice) faça
+		numerosinvertidos[i] := numeros[indice - i]
+fim
+
+escreva ""
+
+para i de 1 até (indice) faça
+	imprima "{numerosinvertidos[i]} "
+fim

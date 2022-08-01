@@ -3,3 +3,28 @@
 # Utilizando apenas um único vetor, o seu algoritmo deverá ordenar os valores 
 # lidos em ordem crescente. Ao final, o programa deverá realizar a impressão dos 
 # números ordenados (um por linha).
+
+var numeros := vetor[5]
+var menor := 0
+var maior := 0
+
+para i de 0 até 4 faça
+	 numeros[i] := leia_inteiro
+fim
+
+para i de 0 até 4 faça
+	para j de i até 4 faça
+      se numeros[j] < numeros[i] então
+      	menor := numeros[j]
+        numeros[j] := numeros[i]
+        numeros[i] := menor
+      fim
+    fim
+fim
+
+escreva "maior: {maior}"
+escreva "menor: {menor}"
+
+para i de 0 até 4 faça
+	imprima numeros[i]
+fim
