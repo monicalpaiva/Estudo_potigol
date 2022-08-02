@@ -12,23 +12,20 @@
 # em uma linha, e os armazenados no segundo vetor na linha imediatamente abaixo.
 # Os números devem estar separados por um espaço em branco simples.
 
-
-#PRECISA CORREÇÕES
-
-var numerospares := vetor[10]
-var indicepar := 0
 var numerosimpares := vetor[10]
 var indiceimpar := 0
+var numerospares := vetor[10]
+var indicepar := 0
 var numero := 0
 
-para i de 0 até 15 faça
+para i de 0 até 14 faça
 	numero := leia_inteiro
-    se numero mod 2 == 0 então
+    se numero mod 2 <> 0 então
        	numerosimpares[indiceimpar]:= numero
      	indiceimpar := indiceimpar + 1
-        se i < 15 então
-          se indiceimpar == 10 então
-              para i de 0 até (indiceimpar -1) faça
+        se i < 13 então
+          se indiceimpar > 10 então
+              para i de 0 até (indiceimpar - 2) faça
                   numerosimpares[i] := numerosimpares[i + 1]
               fim
               indiceimpar := 9
@@ -37,9 +34,9 @@ para i de 0 até 15 faça
    senão
         numerospares[indicepar]:= numero
      	indicepar := indicepar + 1
-        se i < 15 então
-          se indicepar == 10 então
-              para i de 0 até (indicepar -1) faça
+        se i < 13 então
+          se indicepar > 9 então
+              para i de 0 até (indicepar - 2) faça
                   numerospares[i] := numerospares[i + 1]
               fim
               indicepar := 9
@@ -48,10 +45,24 @@ para i de 0 até 15 faça
    fim
 fim
 
-para i de 0 até 9 faça
-	imprima "{numerospares[i]} "
+se indiceimpar < 9 faça
+  para i de 0 até (indiceimpar - 1) faça
+      imprima "{numerosimpares[i]} "
+  fim
+fim
+se indiceimpar >= 9 faça
+  para i de 0 até 9 faça
+      imprima "{numerosimpares[i]} "
+  fim
 fim
 escreva ""
-para i de 0 até 9 faça
-	imprima "{numerosimpares[i]} "
+se indicepar < 9 faça
+  para i de 0 até (indicepar - 1) faça
+      imprima "{numerospares[i]} "
+  fim
+fim
+se indicepar >= 9 faça
+  para i de 0 até 9 faça
+      imprima "{numerospares[i]} "
+  fim
 fim
