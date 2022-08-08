@@ -1,0 +1,115 @@
+# Preenchendo uma Matriz 10x3
+# Construa um programa com uma matriz de 10 linhas e 3 colunas. O seu algoritmo receberá
+# uma quantidade indefinida de números inteiros, até que o valor -1 seja informado.
+
+# Os números ímpares deverão ser armazenados na primeira coluna da matriz
+# (lateral esquerda) e os pares na terceira coluna (lateral direita). Se as colunas
+# da esquerda ou da direita ficarem cheias (completarem as 10 posições) durante a leitura
+# dos valores, você deverá "mover" o valor mais antigo (a posição mais acima da coluna)
+# para a coluna central e, então, deslocar os elementos subsequentes em "uma casa para
+# cima", para que seja possível armazenar o valor na 10ª posição da coluna. Repita essa
+# operação quantas vezes for necessário.
+
+# Caso a coluna central seja completamente preenchida, descarte o valor mais antigo
+# (a primeira linha da coluna) e, então, mova os valores em uma linha para cima e
+# armazene o novo valor na 10ª posição da coluna.
+
+# Seu programa encerra quando o valor -1 for recebido (não armazene o valor -1).
+# Caso ainda restem posições vazias na matriz, essas deverão ser preenchidas com
+# 0 (zero).
+
+# Ao final, o algoritmo deverá escrever a matriz 10x3. Se valores recebidos pelo
+# algoritmo são 1, 2, 3, 4, 5, 6, 7, 8, 9 e -1 a saída esperada é:
+
+# 1 0 2
+# 3 0 4
+# 5 0 6
+# 7 0 8
+# 9 0 0
+# 0 0 0
+# 0 0 0
+# 0 0 0
+# 0 0 0
+# 0 0 0
+
+# AINDA FALTA MELHORAR
+
+var numeros := matriz[10,3]
+var numero := 0
+var linhaimpar := 0
+var linhapar := 0
+var linhacentral := 0
+
+para linha de 0 até 9 faça
+	para coluna de 0 até 2 faça
+    	numeros[linha][coluna] := 0
+     fim
+fim
+
+enquanto numero <> -1 faça
+	numero := leia_inteiro
+    #numeros impares
+	se (numero mod 2) <> 0 and numero <> -1 então
+    	#para linha central eliminar o primeiro
+        se linhaimpar > 9 então
+        	se linhacentral > 9 então
+            	para i de 0 até 8 faça	
+                	numeros[i][1] := numeros[i+1][1]
+                fim
+                numeros[9][1] := numeros[0][0]
+                linhacentral := 10
+                para i de 0 até 8 faça
+					numeros[i][0] := numeros[i+1][0]
+        		fim
+        		numeros[9][0] := numero
+            senão
+              numeros[linhacentral][1] := numeros[0][0]
+              linhacentral := linhacentral + 1
+              para i de 0 até 8 faça
+                  numeros[i][0] := numeros[i+1][0]
+              fim
+              numeros[9][0] := numero
+           fim
+        senão
+			numeros[linhaimpar][0] := numero
+        	linhaimpar := linhaimpar + 1
+         fim
+    #numeros pares
+   	senãose  (numero mod 2) == 0 and numero <> -1 então
+    #para linha central eliminar o primeiro
+        se linhapar > 9 então
+        	se linhacentral > 9 então
+            	para i de 0 até 8 faça	
+                	numeros[i][1] := numeros[i+1][1]
+                 fim
+                 numeros[9][1] := numeros[0][2]
+                 linhacentral := 10
+                 para i de 0 até 8 faça
+					numeros[i][0] := numeros[i+1][0]
+        		 fim
+        		 numeros[9][2] := numero
+            senão
+              numeros[linhacentral][1] := numeros[0][2]
+              linhacentral := linhacentral + 1
+              para i de 0 até 8 faça
+                  numeros[i][2] := numeros[i+1][2]
+              fim
+            numeros[9][2] := numero
+            fim
+        senão
+          numeros[linhapar][2] := numero
+          linhapar := linhapar + 1
+        fim
+    fim
+fim
+
+para linha de 0 até 9 faça
+	para coluna de 0 até 2 faça
+    	se coluna < 2 faça
+        	imprima "{numeros[linha][coluna]} "
+         senão
+         	imprima "{numeros[linha][coluna]}"
+         fim
+    fim
+   	escreva ""
+fim
