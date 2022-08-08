@@ -1,0 +1,23 @@
+# Função Fatorial
+# Construa uma função com o nome fatorial que receba dois números inteiros.
+
+# A função irá verificar se o primeiro número é o resultado do cálculo fatorial do
+# segundo número recebido pela função. Em seguida, caso o cálculo esteja correto,
+# a função retorna o texto s para informar que o cálculo está correto ou n para inficar
+# que o cálculo está errado.
+
+# Obs.: Sua função deverá retornar a cadeia de caracteres (texto) correspondenteo apenas
+# as letras indicadas s ou n, portanto, a função não utiliza os comandos imprima ou
+# escreva.
+
+fatorial( x: inteiro, y: inteiro)
+	var resultado := 1
+	para i de 1 até y faça
+    	resultado := resultado*i
+    fim
+	se resultado == x então
+    	retorne "s"
+     senão
+     	retorne "n"
+     fim
+fim

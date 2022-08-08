@@ -1,0 +1,13 @@
+# Função Produto
+# Construa uma função denominada produto.
+
+# Essa função deverá receber dois números inteiros. Ao final, deverá retornar o
+# produto dos números recebidos por ela.
+
+# Obs.: Sua função não deverá utilizar os comandos escreva ou imprima, apenas retornar
+# o valor do produto.
+
+produto(x: inteiro, y: inteiro)
+	var resultado := x * y
+   retorne resultado
+fim

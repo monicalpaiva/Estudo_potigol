@@ -1,0 +1,23 @@
+# Função do Primo
+# Construa uma função com o nome ehPrimo que receba um número e retorna o valor lógico
+# verdadeiro, se o número for primo. Caso o número fornecido não seja primo, a função
+# deve retornar o valor lógico falso.
+
+# Obs.: Sua função deverá retornar o valor verdadeiro ou falso e não o texto "verdadeiro"
+# ou "falso".
+
+ehPrimo (x:inteiro)
+	var condicao := false
+    var contador := 0
+    para i de 1 até x faça
+    	se (x mod i)  == 0 então
+        	contador := contador + 1
+        fim
+    fim
+    se contador > 2 então
+    	condicao := false
+    senão
+    	condicao := true
+    fim
+    retorne condicao
+fim

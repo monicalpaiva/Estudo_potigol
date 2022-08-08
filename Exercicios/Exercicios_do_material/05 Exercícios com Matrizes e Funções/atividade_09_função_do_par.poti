@@ -1,0 +1,14 @@
+# Função do Par
+# Construa uma função com o nome ehPar que recebe um número e retorna a palavra par,
+# se o número for par ou a palavra ímpar, se o número for ímpar.
+
+# Obs.: Sua função não deverá utilizar os comandos escreva ou imprima, apenas retornar
+# o valor.
+
+ehPar(x: inteiro)
+	se x mod 2 == 0 então
+    	retorne "par"
+     senão
+     	retorne "ímpar"
+     fim
+fim

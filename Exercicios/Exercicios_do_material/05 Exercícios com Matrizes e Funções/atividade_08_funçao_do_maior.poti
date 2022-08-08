@@ -1,0 +1,26 @@
+# Função do Maior
+# Construa uma função com o nome funcaoMaior que receba 3 números inteiros e retorna o
+# maior valor entre eles.
+
+# Caso os números sejam iguais, sua função deverá retornar o valor 0 (zero).
+
+# Obs.: Sua função não deverá utilizar os comandos escreva ou imprima, apenas
+# retornar o valor.
+
+funcaoMaior(x: inteiro, y: inteiro, z: inteiro)
+	var maior := 0
+	se x > y então
+    	maior := x
+    senãose y > x então
+     	maior := y
+    senãose y == x então
+     	retorne 0
+    fim
+    se z > maior então
+    	maior :=  z
+    senãose z == maior então
+    	retorne 0
+    senão
+    	retorne maior
+     fim
+fim
